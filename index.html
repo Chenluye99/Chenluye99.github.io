@@ -37,44 +37,70 @@
 <div class="blockcontent">
 </div></div>
 <h2>Publications and Preprints</h2>
-<p>(Alphabetical) means that the order is decided by rock–paper–scissors and (*) denotes equal contribution.</p>
+<p>(*) denotes alphabetical order or equal contribution.</p>
 <ol>
-<li><p><a href="https://arxiv.org/abs/2402.07314" target=&ldquo;blank&rdquo;>A theoretical analysis of nash learning from human feedback under general kl-regularized preference</a> <br />
+<li><p><b>Reinforcement Learning for Post-Training</b></p>
+<ol>
+<li><p><a href="https://arxiv.org/pdf/2502.07460" target=&ldquo;blank&rdquo;>Logarithmic Regret for Online KL-Regularized Reinforcement Learning</a> <br />
+Heyang Zhao*, Chenlu Ye*, Wei Xiong, Quanquan Gu, Tong Zhang, Preprint.<br /> 
+We show that KL-regularized reinforcement learning with online exploration enjoy logarithmic regret bound. <br /><br /></p>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2411.04625" target=&ldquo;blank&rdquo;>Sharp Analysis for KL-Regularized Contextual Bandits and RLHF</a> <br />
+Heyang Zhao, Chenlu Ye, Wei Xiong, Quanquan Gu, Tong Zhang, Preprint.<br /> 
+We prove sharp sample complexity for KL-regularized contextual bandits and reinforcement learning from human feedback. <br /><br /></p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2402.07314" target=&ldquo;blank&rdquo;>Online iterative reinforcement learning from human feedback with general preference model</a> <br />
 Chenlu Ye*, Wei Xiong*, Yuheng Zhang*, Hanze Dong*, Nan Jiang, Tong Zhang, <i>NeurIPS</i> 2024.<br /> 
-We study general preference without assuming the Bradley–Terry model. We propose sample efficient algorithms for both online and offline settings and validate their efficiency theoretically and empirically. <br /><br /></p>
+We study general preference without assuming the Bradley–Terry model. We propose sample efficient algorithms for both online and offline settings and validate their
+efficiency theoretically and empirically. <br /><br /></p>
+</li>
+<li><p><a href="https://arxiv.org/abs/2312.11456" target=&ldquo;blank&rdquo;>Iterative preference learning from human feedback: Bridging theory and practice for rlhf under kl-constraint</a> <br />
+Wei Xiong*, Hanze Dong*, Chenlu Ye*, Han Zhong, Nan Jiang, Tong Zhang, <i>ICML</i> 2024.<br /> 
+We formulate the real-world RLHF process as a reverse-KL regularized contextual bandit and study its theoretical property by proposing statistically efficient algorithms with 									
+a finite-sample theoretical guarantee. We also connect our theoretical findings with practical algorithms (e.g. DPO, RSO), offering new tools and insights for the algorithmic 	
+design of alignment algorithms.<br /><br /></p>
+</li></ol>
+</li>
+<li><p><b>Theory of decision making porblems</b></p>
+<ol>
+<li><p><a href="https://arxiv.org/pdf/2502.02486" target=&ldquo;blank&rdquo;>Catoni Contextual Bandits are Robust to Heavy-tailed Rewards</a> <br />
+Chenlu Ye*, Yujia Jin, Alekh Agarwal, Tong Zhang, <i>ICML</i> 2024.<br /> 
+We build online contectual bandits based on Catoni's estimator from robust statistics under general function approximation and show that the regret bound depends 
+logarithmically on the reward range for both known and unkown reward variances.<br /><br /></p>
 </li>
 <li><p><a href="https://arxiv.org/abs/2402.08991" target=&ldquo;blank&rdquo;>Towards robust model-based reinforcement learning against adversarial corruption</a> <br />
 Chenlu Ye*, Jiafan He*, Quanquan Gu, Tong Zhang, <i>ICML</i> 2024.<br /> 
 An analysis of uncertainty-aware algorithms in the model-based framework under adversarial corruption and general function approximation.<br /><br /></p>
 </li>
-<li><p><a href="https://arxiv.org/abs/2312.11456" target=&ldquo;blank&rdquo;>Iterative preference learning from human feedback: Bridging theory and practice for rlhf under kl-constraint</a> <br />
-Wei Xiong*, Hanze Dong*, Chenlu Ye*, Han Zhong, Nan Jiang, Tong Zhang, <i>ICML</i> 2024.<br /> 
-We formulate the real-world RLHF process as a reverse-KL regularized contextual bandit and study its theoretical property by proposing statistically efficient algorithms with a finite-sample theoretical guarantee. We also connect our theoretical findings with practical algorithms (e.g. DPO, RSO), offering new tools and insights for the algorithmic design of alignment algorithms.
-<br /><br /></p>
-</li>
 <li><p><a href="https://arxiv.org/abs/2310.14550" target=&ldquo;blank&rdquo;>Corruption-Robust Offline Reinforcement Learning with General Function Approximation</a> <br />
 Chenlu Ye*, Rui Yang*, Quanquan Gu and Tong Zhang, <i>NeurIPS</i> 2023.<br /> 
-An application of the uncertainty-weighting technique in offline reinforcement learning problems under adversarial corruption and general function approximation. Moreover, practical implementations under various data-corruption scenarios are carried out on the uncertainty-weighting algorithm, which outperforms the state-of-the-art.
-<br /><br /></p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2309.02476" target=&ldquo;blank&rdquo;>Optimal Sample Selection Through Uncertainty Estimation and Its Application in Deep Learning</a> <br />
-Yong Lin*, Chen Liu*, Chenlu Ye*, Qing Lian, Yuan Yao and Tong Zhang, Preprint.<br /> 
-A Theoretically optimal and computationally efficient sample selection approach, which can be effectively applied to deep learning and is robust to misspecification (by
-down-weighting highly uncertain samples).
-<br /><br /></p>
+An application of the uncertainty-weighting technique in offline reinforcement learning problems under adversarial corruption and general function approximation. Moreover, 	
+practical implementations under various data-corruption scenarios are carried out on the uncertainty-weighting algorithm, which outperforms the state-of-the-art.<br /><br /></p>
 </li>
 <li><p><a href="https://arxiv.org/abs/2212.05949" target=&ldquo;blank&rdquo;>Corruption-Robust Algorithms with Uncertainty Weighting for Nonlinear Contextual Bandits and Markov Decision Processes</a> <br />
 Chenlu Ye, Wei Xiong, Quanquan Gu and Tong Zhang, <i>ICML</i> 2023.<br /> 
-An application of uncertainty-weighted regression in the face of adversarial corruptions and under general function approximation: new weight design, and new techniques for controlling the sum of the (weighted) bonus (counterpart of the elliptical potential lemmas).<br /><br /></p>
+An application of uncertainty-weighted regression in the face of adversarial corruptions and under general function approximation: new weight design, and new techniques for 	
+controlling the sum of the (weighted) bonus (counterpart of the elliptical potential lemmas).<br /><br /></p>
 </li>
 <li><p><a href="https://arxiv.org/abs/2311.13180" target=&ldquo;blank&rdquo;>Provably Efficient High-Dimensional Bandit Learning with Batched Feedbacks</a> <br />
 Jianqing Fan*, Zhaoran Wang*, Zhuoran Yang*, Chenlu Ye* (Alphabetical), Preprint.<br /> 
-A batching framework for high-dimensional multi-armed bandit problems, with simulations on both synthetic and real-world data</p>
+A batching framework for high-dimensional multi-armed bandit problems, with simulations on both synthetic and real-world data.<br /><br /></p>
+</li></ol>
+</li>
+<li><p><b>Active Learning</b></p>
+<ol>
+<li><p><a href="https://arxiv.org/abs/2309.02476" target=&ldquo;blank&rdquo;>Optimal Sample Selection Through Uncertainty Estimation and Its Application in Deep Learning</a> <br />
+Yong Lin*, Chen Liu*, Chenlu Ye*, Qing Lian, Yuan Yao and Tong Zhang, Preprint.<br /> 
+A Theoretically optimal and computationally efficient sample selection approach, which can be effectively applied to deep learning and is robust to misspecification (by
+down-weighting highly uncertain samples).<br /><br /></p>
+</li>
+</ol>
+
 </li>
 </ol>
 <div id="footer">
 <div id="footer-text">
-Page generated 2024-10-07, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2025-02-24, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </td>
