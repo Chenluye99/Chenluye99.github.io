@@ -1,29 +1,32 @@
 /* Default css file for jemdoc. */
 
 table#tlayout {
-    border: none;
-    border-collapse: separate;
-    background: white;
+	border: none;
+	border-collapse: separate;
+	background: white;
+	width: 980px;
+	margin: 24px auto;
 }
 
 body {
-	background: white;
-	font-family: Georgia, serif;
+	background: #f2f2f2;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding-bottom: 8px;
 	margin: 0;
+	color: #222;
 }
 
 #layout-menu {
-	background: #f6f6f6;
-	border: 1px solid #dddddd;
-	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 8px;
-	font-size: 1.0em;
-	width: auto;
+	background: #f7f7f7;
+	border: 1px solid #d9d9d9;
+	padding-top: 0.7em;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 0.95em;
+	width: 170px;
 	white-space: nowrap;
-    text-align: left;
-    vertical-align: top;
+	text-align: left;
+	vertical-align: top;
 }
 
 #layout-menu td {
@@ -33,12 +36,13 @@ body {
 
 #layout-content {
 	padding-top: 0.0em;
-	padding-left: 1.0em;
+	padding-left: 1.4em;
 	padding-right: 1.0em;
-    border: none;
-    background: white;
-    text-align: left;
-    vertical-align: top;
+	border: none;
+	background: #f8f8f8;
+	text-align: left;
+	vertical-align: top;
+	width: 760px;
 }
 
 #layout-menu a {
@@ -56,7 +60,7 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #426ab3;
+	color: #2b4f8c;
 	text-decoration: none;
 }
 
@@ -65,11 +69,11 @@ a:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #444693;
-	border-bottom: 1px gray solid;
+	color: #2a4a80;
+	border-bottom: 1px solid #8d99ac;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #4e72b8;
+	color: #365888;
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -77,11 +81,12 @@ a:hover {
 }
 
 div.menu-category {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #d7d7d7;
 	margin-top: 0.8em;
 	padding-top: 0.2em;
 	padding-bottom: 0.1em;
 	font-weight: bold;
+	color: #333;
 }
 
 div.menu-item {
@@ -92,7 +97,7 @@ div.menu-item {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 3px double gray;
+	border-bottom: 2px solid #bcc2cb;
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -117,13 +122,13 @@ strong {
 
 
 h1, h2, h3 {
-	color: #4e72b8;
+	color: #1f3558;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
-	line-height: 1.0;
+	line-height: 1.2;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1px solid #c9ced5;
 }
 
 h1 {
@@ -148,7 +153,7 @@ p {
 	margin-top: 0.0em;
 	margin-bottom: 0.8em;
 	padding: 0;
-	line-height: 1.3;
+	line-height: 1.55;
 }
 
 pre {
@@ -198,7 +203,7 @@ dd > *:first-child {
 
 ul {
 	list-style-position: outside;
-	list-style-type: square;
+	list-style-type: disc;
 }
 
 p + ul, p + ol {
@@ -271,6 +276,83 @@ div.infoblock p + p {
 
 div.codeblock > div.blockcontent {
 	background: #f6f6f6;
+}
+
+.pub-card {
+	display: flex;
+	align-items: flex-start;
+	gap: 18px;
+	background: #ededed;
+	border: 1px solid #d8d8d8;
+	border-radius: 8px;
+	padding: 14px 16px;
+	margin: 12px 0;
+}
+
+.pub-badge {
+	min-width: 116px;
+	text-align: center;
+	background: #878787;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+	border-radius: 6px;
+	padding: 4px 10px;
+	line-height: 1.25;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.pub-main {
+	flex: 1;
+}
+
+.pub-title {
+	display: block;
+	font-size: 18px;
+	font-weight: 500;
+	color: #1f1f1f;
+	line-height: 1.3;
+	margin-bottom: 4px;
+}
+
+.pub-authors {
+	display: block;
+	font-size: 14px;
+	color: #2a2a2a;
+	line-height: 1.35;
+}
+
+.pub-venue {
+	display: block;
+	font-size: 16px;
+	color: #2d2d2d;
+	margin-top: 2px;
+}
+
+.pub-links {
+	display: block;
+	margin-top: 10px;
+}
+
+.pub-btn {
+	display: inline-block;
+	min-width: 54px;
+	padding: 4px 8px;
+	margin-right: 8px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	color: #1f1f1f;
+	background: #f2f2f2;
+	border: 1px solid #444;
+	border-radius: 2px;
+}
+
+.pub-btn:hover {
+	background: #e7e7e7;
+	border-bottom: 1px solid #444;
 }
 
 span.pycommand {
@@ -364,4 +446,372 @@ img {
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
+}
+
+/* Homepage style override: close to yaof20 layout */
+body {
+	background: #ececec;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	color: #1f1f1f;
+}
+
+table#tlayout {
+	width: 1040px;
+	max-width: calc(100% - 48px);
+	margin: 20px auto 36px auto;
+	background: transparent;
+}
+
+#layout-menu {
+	display: none;
+}
+
+#layout-content {
+	width: auto;
+	padding: 0;
+	background: transparent;
+}
+
+div#toptitle {
+	border-bottom: none;
+	margin-bottom: 6px;
+	padding-bottom: 0;
+}
+
+div#toptitle h1, #layout-content div#toptitle h1 {
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1.15;
+	color: #171717;
+	margin: 0 0 8px 0;
+}
+
+h2 {
+	font-size: 30px;
+	border-bottom: none;
+	color: #202020;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-top: 0;
+}
+
+p, li {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #222;
+}
+
+a, a > tt {
+	color: #2a4f88;
+}
+
+.home-email {
+	display: block;
+	font-size: 17px;
+	color: #303030;
+	margin-bottom: 14px;
+}
+
+.pub-card {
+	display: flex;
+	align-items: flex-start;
+	gap: 18px;
+	background: #e8e8e8;
+	border: 1px solid #d2d2d2;
+	border-radius: 8px;
+	padding: 14px 16px;
+	margin: 10px 0;
+}
+
+.pub-badge {
+	min-width: 120px;
+	text-align: center;
+	background: #8b8b8b;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 650;
+	border-radius: 7px;
+	padding: 5px 10px;
+	line-height: 1.2;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.pub-main {
+	flex: 1;
+}
+
+.pub-title {
+	display: block;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 1.23;
+	color: #141414;
+	margin-bottom: 2px;
+}
+
+.pub-authors {
+	display: block;
+	font-size: 14px;
+	line-height: 1.34;
+	color: #202020;
+}
+
+.pub-venue {
+	display: block;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #232323;
+	margin-top: 2px;
+}
+
+.pub-links {
+	display: block;
+	margin-top: 10px;
+}
+
+.pub-btn {
+	display: inline-block;
+	min-width: 54px;
+	padding: 4px 10px;
+	margin-right: 8px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	color: #1f1f1f;
+	background: #f0f0f0;
+	border: 1px solid #4a4a4a;
+	border-radius: 2px;
+}
+
+.pub-btn:hover {
+	background: #e4e4e4;
+	border-bottom: 1px solid #4a4a4a;
+}
+
+/* Final strict override for yaof20-like homepage */
+#layout-content {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 8px 24px 8px !important;
+}
+
+div#toptitle h1, #layout-content div#toptitle h1 {
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.12;
+	margin: 4px 0 10px 0;
+	color: #171717;
+}
+
+.top-nav {
+	display: flex;
+	gap: 18px;
+	font-size: 14px;
+	margin: 8px 0 18px 0;
+}
+
+.top-nav a {
+	color: #3c3c3c !important;
+	text-decoration: none;
+}
+
+.top-nav a.active {
+	font-weight: 700;
+}
+
+.profile-pic {
+	width: 168px;
+	height: 168px;
+	object-fit: cover;
+	border-radius: 6px;
+	display: block;
+	margin: 2px 0 14px 0;
+}
+
+.home-email {
+	font-size: 19px;
+	margin-bottom: 14px;
+	color: #2d2d2d;
+}
+
+h2 {
+	font-size: 34px;
+	margin-top: 28px;
+	margin-bottom: 8px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.55;
+}
+
+.pub-card {
+	padding: 12px 14px;
+	margin: 9px 0;
+	border-radius: 7px;
+}
+
+.pub-badge {
+	min-width: 110px;
+	font-size: 13px;
+	padding: 4px 9px;
+}
+
+.pub-title {
+	font-size: 18px;
+}
+
+.pub-authors {
+	font-size: 15px;
+}
+
+.pub-venue {
+	font-size: 17px;
+}
+
+/* Canonical override: match yaof20 proportions closely */
+body {
+	background: #f5f5f5 !important;
+	padding-top: 46px !important;
+}
+
+.global-topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: #f8f8f8;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.global-topbar-inner {
+	max-width: 820px;
+	margin: 0 auto;
+	padding: 10px 8px;
+	display: flex;
+	gap: 18px;
+	font-size: 14px;
+}
+
+.global-topbar a {
+	color: #3b3b3b !important;
+	text-decoration: none;
+}
+
+#layout-content {
+	max-width: 820px !important;
+	margin: 0 auto !important;
+	padding: 0 8px 26px 8px !important;
+}
+
+div#toptitle h1, #layout-content div#toptitle h1 {
+	font-size: 48px !important;
+	line-height: 1.1 !important;
+	margin: 6px 0 10px 0 !important;
+}
+
+h2 {
+	font-size: 32px !important;
+	margin-top: 24px !important;
+	margin-bottom: 8px !important;
+}
+
+p, li {
+	font-size: 16px !important;
+	line-height: 1.6 !important;
+}
+
+.profile-pic {
+	width: 160px;
+	height: 160px;
+	margin: 4px 0 12px 0;
+}
+
+.home-email {
+	font-size: 18px !important;
+	margin-bottom: 12px !important;
+}
+
+.name-links {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	margin: 2px 0 10px 0;
+}
+
+.name-links a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	font-size: 27px;
+	color: #3a3a3a !important;
+	text-decoration: none;
+}
+
+.name-links a:hover {
+	color: #111 !important;
+}
+
+.intro-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 250px;
+	gap: 26px;
+	align-items: start;
+	margin: 6px 0 12px 0;
+}
+
+.intro-text {
+	font-size: 16px;
+	line-height: 1.62;
+	color: #222;
+}
+
+.intro-side {
+	text-align: center;
+}
+
+.name-links-text {
+	font-size: 14px !important;
+	margin: -2px 0 10px 0;
+}
+
+.name-links-text a {
+	color: #2a4f88 !important;
+}
+
+.pub-title {
+	font-size: 16px !important;
+}
+
+.pub-authors {
+	font-size: 14px !important;
+}
+
+.pub-venue {
+	font-size: 15px !important;
+}
+
+.pub-card {
+	background: #f3f3f3 !important;
+}
+
+.profile-pic {
+	width: 245px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 6px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+	margin: 0;
+}
+
+.intro-side-email {
+	margin-top: 10px;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	color: #222;
 }
