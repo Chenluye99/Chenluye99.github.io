@@ -815,3 +815,129 @@ p, li {
 	letter-spacing: 0.03em;
 	color: #222;
 }
+
+.pub-summary {
+	display: block;
+	margin-top: 7px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #4a4a4a;
+}
+
+.job-market {
+	--job-market-accent: #2a4f88;
+	display: block;
+	margin: 16px 0 22px;
+	padding: 14px 18px;
+	border-left: 4px solid var(--job-market-accent);
+	border-radius: 4px;
+	background: #edf2f8;
+}
+
+.job-market-title {
+	display: block;
+	margin-bottom: 4px;
+	font-size: 18px;
+	color: #1f3558;
+}
+
+.job-market-text {
+	display: block;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.job-market-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 18px;
+	margin-top: 8px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.job-market-links a {
+	color: var(--job-market-accent);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.section-note {
+	font-size: 14px !important;
+	color: #555;
+}
+
+.pub-main {
+	min-width: 0;
+}
+
+.pub-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.pub-btn {
+	margin-right: 0;
+}
+
+#experiences {
+	scroll-margin-top: 60px;
+}
+
+@media (max-width: 640px) {
+	#layout-content {
+		padding: 0 18px 26px !important;
+	}
+
+	table#tlayout {
+		width: 100%;
+		max-width: 100%;
+		margin-top: 12px;
+	}
+
+	.global-topbar-inner {
+		padding-right: 18px;
+		padding-left: 18px;
+		gap: 14px;
+	}
+
+	div#toptitle h1, #layout-content div#toptitle h1 {
+		font-size: 38px !important;
+	}
+
+	h2 {
+		font-size: 26px !important;
+	}
+
+	.intro-grid {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 20px;
+	}
+
+	.intro-side {
+		justify-self: center;
+	}
+
+	.profile-pic {
+		width: 196px;
+		height: 240px;
+	}
+
+	.pub-card {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.pub-badge {
+		min-width: 0;
+	}
+
+	#layout-content a {
+		overflow-wrap: anywhere;
+	}
+
+	ul {
+		padding-left: 22px;
+	}
+}
